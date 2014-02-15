@@ -1,0 +1,4 @@
+(res/drawable/icon.png) icon too small:impact=2
+(AndroidManifest.xml) uses-permission: com.android.vending.BILLING:required minimal Tablet OS version=2.1:impact=3
+Summary: [5]=0; [4]=0; [3]=1; [2]=1; [1]=0;
+Impact Legend: [5]=Severe; [4]=High /context; [3]=Medium /context; [2]=Medium-low /context; [1]=Minor;
