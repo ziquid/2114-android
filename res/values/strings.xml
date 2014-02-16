@@ -9,8 +9,8 @@
   <string name="menu_quests">Objectives</string>
   <string name="url_quests">http://stl2114.game.ziquid.com/stlouis/quests/</string>
 
-  <string name="menu_elections">Clashes</string>
-  <string name="url_elections">http://stl2114.game.ziquid.com/stlouis/debates/</string>
+  <string name="menu_elections">Favors</string>
+  <string name="url_elections">http://stl2114.game.ziquid.com/stlouis/favors/</string>
 
   <string name="menu_aides">Items</string>
   <string name="url_aides">http://stl2114.game.ziquid.com/stlouis/land/</string>
@@ -23,9 +23,6 @@
     
   <string name="menu_profile">My Profile</string>
   <string name="url_profile">http://stl2114.game.ziquid.com/stlouis/user/</string>
-    
-<!--   <string name="menu_forum">St. Louis Forum</string>
-  <string name="url_forum">http://forum.cheek.com/forum/2</string> -->
 
   <string name="url_purchase">http://stl2114.game.ziquid.com/stlouis/elders_do_purchase/</string>
   
