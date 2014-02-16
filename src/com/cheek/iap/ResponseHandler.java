@@ -127,7 +127,7 @@ public class ResponseHandler {
     		final String nonce = UUID.randomUUID().toString();
     		
     		final String URLBase = 
-    			context.getString(com.cheek.stlouis.R.string.url_purchase)
+    			context.getString(com.ziquid.stl2114.R.string.url_purchase)
 	    		+ developerPayload + '/' + productId + '/' + nonce;
 	    	
 	    	Log.i(TAG, "since purchase was successful, requesting " + URLBase);
@@ -149,7 +149,7 @@ public class ResponseHandler {
 	                		(HttpURLConnection) myFileUrl.openConnection();
 	                	conn.setDoInput(true);
 	                    conn.setRequestProperty("User-Agent",
-	                     	"com.cheek.stlouis luckloader");
+	                     	"com.ziquid.stl2114 luckloader");
 	                    conn.connect();
 	                    InputStream is = conn.getInputStream();
 	                  

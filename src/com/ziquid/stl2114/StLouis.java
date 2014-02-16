@@ -1,4 +1,4 @@
-package com.cheek.stlouis;
+package com.ziquid.stl2114;
 
 import java.util.Random;
 import java.util.UUID;
@@ -34,6 +34,7 @@ import com.cheek.iap.BillingService.RequestPurchase;
 import com.cheek.iap.BillingService.RestoreTransactions;
 import com.cheek.iap.Consts.PurchaseState;
 import com.cheek.iap.Consts.ResponseCode;
+import com.ziquid.stl2114.R;
 
 public class StLouis extends Activity {
 
@@ -42,7 +43,7 @@ public class StLouis extends Activity {
     private static final int MENU_ELECTIONS = Menu.FIRST + 2;
     private static final int MENU_AIDES = Menu.FIRST + 3;
     private static final int MENU_ACTIONS = Menu.FIRST + 4;
-    private static final int MENU_FORUM = Menu.FIRST + 5;
+    private static final int MENU_ELDERS = Menu.FIRST + 5;
     
     private WebView engine;
     private String androidID, usableWidth = "320",
@@ -153,7 +154,7 @@ public class StLouis extends Activity {
         
         try {
 
-        	pInfo = getPackageManager().getPackageInfo("com.cheek.stlouis",
+        	pInfo = getPackageManager().getPackageInfo("com.ziquid.stl2114",
     			PackageManager.GET_META_DATA);
             engine.getSettings().setUserAgentString(
         		engine.getSettings().getUserAgentString() + " (" +
@@ -166,7 +167,7 @@ public class StLouis extends Activity {
         	
         	engine.getSettings().setUserAgentString(
         		engine.getSettings().getUserAgentString() +
-        		" (com.cheek.stlouis/Unknown/Unknown" +
+        		" (com.ziquid.stl2114/Unknown/Unknown" +
         		billingSupportString + ')');
         	
         }
@@ -252,9 +253,9 @@ public class StLouis extends Activity {
         	R.string.menu_actions)
         	.setIcon(R.drawable.stlouis_actions);
 
-    	menu.add(0, MENU_FORUM, 5,
-        	R.string.menu_forum)
-        	.setIcon(R.drawable.stlouis_forum);
+    	menu.add(0, MENU_ELDERS, 5,
+        	R.string.menu_elders)
+        	.setIcon(R.drawable.stlouis_elders);
 
         return result;
     } // onCreateOptionsMenu
@@ -285,8 +286,8 @@ public class StLouis extends Activity {
     		engine.loadUrl(getString(R.string.url_actions) + androidID);
             return true;
 
-    	case MENU_FORUM:
-    		engine.loadUrl(getString(R.string.url_forum));
+    	case MENU_ELDERS:
+    		engine.loadUrl(getString(R.string.url_elders) + androidID);
 //    		buyLuck("luck_10"); // for testing
             return true;
 

@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /Users/joseph/Documents/workspace/StLouis Android/src/com/android/vending/billing/IMarketBillingService.aidl
+ * Original file: /Users/joseph/git/2114-android/src/com/android/vending/billing/IMarketBillingService.aidl
  */
 package com.android.vending.billing;
 public interface IMarketBillingService extends android.os.IInterface
