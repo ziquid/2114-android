@@ -475,7 +475,7 @@ public class StLouis extends Activity {
 //        		(HttpURLConnection) myFileUrl.openConnection();
 //        	conn.setDoInput(true);
 //            conn.setRequestProperty("User-Agent",
-//             	"com.cheek.celestialglory luckloader");
+//             	"com.ziquid.celestialglory luckloader");
 //            conn.connect();
 ////             int length = conn.getContentLength();
 //            InputStream is = conn.getInputStream();
